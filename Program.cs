@@ -43,7 +43,18 @@ namespace BlackJack
 
                     Random rnd = new Random();
                     int O_Cartas = rnd.Next(1, 12);
-                    // intento
+
+                    
+                    /// <summary>
+                    /// Hacer que el as valga 11 o 21 segun la situacion
+                    /// </summary>
+                    /// <value></value>
+            
+                    if(O_Cartas == 11 && suma >=11){
+                        O_Cartas = 1;
+                    }
+
+                    // Carta random ai
                     Random rand = new Random();
                     int ai = rand.Next(17, 26);
 
