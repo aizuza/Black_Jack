@@ -46,8 +46,6 @@ namespace BlackJack
 
 
 
-
-
                     /// <summary>
                     /// calcula el valor total de las cartas en la mano
                     /// </summary>
@@ -60,34 +58,31 @@ namespace BlackJack
 
 
 
-                    // El jugador obtiene un 21 y la casa obtiene un número menor.
-                    if (suma == 21)
-                    {
-                        Console.WriteLine("Ganó el jugador con " + suma);
-                    }
-                    else if (suma > 21)
-                    {
-                        Console.WriteLine("Ganó el dealer");
-                    }
 
 
                 }
+                else if (eleccion == 2)
+                {
+
+                    // Genera una carta aleatoria para la AI
+
+                    Random rnd = new Random();
+                    int ai = rnd.Next(17, 26);
+                    Console.WriteLine("La mano del dealer es: " + ai);
+                    Console.WriteLine("La mano del jugador es: " + suma);
+
+
+
+                    break;
+                }
+
+
+
 
             }
 
-
         }
 
+
     }
-
-
-
-
-
-
-
-
-
-
-
 }
