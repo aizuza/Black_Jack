@@ -2,11 +2,31 @@
 
 namespace BlackJack
 {
+
+
     class Program
     {
+
+       
+        static int suma = 0;
+        
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+           Console.WriteLine("Tienes " + suma + " cartas.");
+            
+            
+
         }
+        
+
+
+
+       
+
+
+
+      
+
+
     }
 }
